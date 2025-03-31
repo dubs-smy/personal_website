@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="portfolio" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Dublin Smyth</title>
+    <link rel="stylesheet" href="../css/portfolio_main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my site!</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li>
+            <a href="#projects">Projects</a>
+            <ul class="dropdown">
+              <li><a href="projects_software.html">Software</a></li>
+              <li><a href="projects_music.html">Music</a></li>
+              <li><a href="projects_videos.html">Videos</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm very passionate about software development, music, and video creation.</p>
+        <h4>Picture of Me (Professional Picture coming soon)</h4>
+        <img src="../images/me_guitar.jpg" class="rounded-image">
+      </section>
+
+      <section id="projects">
+        <h2>My Passions</h2>
+
+        <div class="project-card">
+          <h3>Software</h3>
+          <p>Click for details.</p>
+          <div class="project-details">
+            <p>I am a full stack developer with a lot of experience in Java, python, developer tools, and automation testing. </p>
+            <a href="projects_software.html" class="link-button">Software Projects</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Music</h3>
+          <p>Click for details.</p>
+          <div class="project-details">
+            <p>I am learning how to play guitar and sing/scream without hurting my vocal cords at all.</p>
+            <a href="projects_music.html" class="link-button">Music Projects</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Video</h3>
+          <p>Click for details.</p>
+          <div class="project-details">
+            <p>I am a fledgling video creator with no lofty goals. Short form creative videos is what I've done so far but I have ideas for some longer skit-like videos.</p>
+            <a href="projects_videos.html" class="link-button">Video Projects</a>
+          </div>
+        </div>
+        <div id="project-details"></div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <label>Name:
+            <input type="text" id="name" required>
+          </label>
+          <label>Email:
+            <input type="email" id="email" required>
+          </label>
+          <label>Message:
+            <textarea id="message" required></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+        <div id="formResponse"></div>
+      </section>
+
+      <section id="links">
+        <h2>Links</h2>
+        <div>
+          <h4 class="link-text">Instagram for Video Creation:</h4>
+          <a href="https://www.instagram.com/ds_vda/" target="_blank" class="link-text">@ds_vda</a>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ds_wda. All rights reserved.</p>
+    </footer>
+    <script src="../javascript/portfolio_main.js"></script>
+  </body>
+</html>
